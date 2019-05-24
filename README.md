@@ -14,14 +14,21 @@ Hämta alla katter:
 
 Hämta katt nummer 0:
 `curl localhost:3000/cat/0`
+`curl localhost:3000/dog/2`
+
 
 Sök efter en katt med namnet Aslan:
 `curl localhost:3000/catSearch/name/Aslan`
+`curl localhost:3000/catSearch/name/Missan`
 
 Lägg till en katt:
 `curl -X POST localhost:3000/cat \
  -H 'Content-Type: application/json' \
  --data '{"name": "Missan", "age": 5, "color": "Brown"}'`
+
+ `curl -X POST localhost:3000/pokemon \
+ -H 'Content-Type: application/json' \
+ --data '{"name": "Charzard", "age": 5, "color": "Brown"}'`
  
 ## Uppgiften  
 Er uppgift är att bygga ut den här applikationen, så att det
@@ -40,3 +47,5 @@ allt i en fil, så klura ut ett lämpligt sätt att dela upp koden.
 
 ## Upp till er
 Jag har lagt in en linter, men för övrigt inte bestämt kodstandard...
+
+melker.hedengren@medieinstitutet.se eunju.huss@medieinstitutet.se linda.storgard@medieinstitutet.se tomasz.szczygiel.@medieinstitutet.se
